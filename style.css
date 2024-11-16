@@ -248,7 +248,7 @@ body.nav-active {overflow: hidden;}
 }
 
 .section-subtitle::after {
-    content: url(images/goldframe.png);
+    
     display: block;
     width: 100px;
     margin-inline: 113px;
@@ -1264,7 +1264,7 @@ textarea.input-field {
 .footer-brand {
     position: relative;
     padding: 50px 40px;
-    background: var(--smoky-black-1) url(images/iimg-pattern-removebg-preview.png);
+    background: var(--smoky-black-1) url(images/formm-pattern-removebg-preview.png);
     background-position: center top;
     background-repeat: repeat;
 }
@@ -1274,7 +1274,7 @@ textarea.input-field {
     top: 0;
     width: 15px;
     height: 100%;
-    background-image: url(images/footer-form-pattern-bg-removebg-preview.png);
+    background-image: url(images/footer-bg.png);
 }
 
 .footer-brand::before { left: 0;}
@@ -1757,8 +1757,154 @@ textarea.input-field {
 
 
     .about .container {
-        grid-template: 0.7fr 1fr;
+        grid-template-columns: 0.7fr 1fr;
         gap: 30px;
     }
 
+
+
+
+
+
+
+
+
+    .special-dish {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+
+    .special-dish-content { padding-inline: 50px 25px;}
+
+    .special-dish-content .container {position: relative;}
+
+    .special-dish .section-subtitle::after,
+    .special-dish .btn { margin-inline: 0;}
+
+    .special-dish-content .wrapper {
+        justify-content: flex-start;
+    }
+
+    .special-dish .abs-img {
+        position: absolute;
+        top: 10px;
+        left: -40px;
+        animation: move 5s linear infinite;
+    }
+
+
+
+
+
+
+
+
+
+
+    .menu .grid-list {
+        position: relative;
+        column-gap: 90px;
+    }
+
+    .menu .grid-list::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        height: 100%;
+        border-inline-start: 1px solid var(--white-alpha-20);
+    }
+
+
+
+
+
+
+
+
+    .testi-text {
+        max-width: 910px;
+        margin-inline: auto;
+    }
+
+
+
+
+
+
+
+
+    .reservation-form {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+    }
+
+
+
+
+
+
+
+
+    .footer .grid-list {
+        grid-template-columns: 0.45fr 1fr 0.45fr;
+        align-items: center;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+        order: 1;
+        padding-block: 100px;
+    }
+
+    .footer-list:last-child {
+        order: 2;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1200px) {
+
+    :root {
+
+        --fontSize-title-2: 2.5rem;
+    }
+
+
+    .container,
+    :is(.service, .event) .container {
+        max-width: 1200px;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+
+    .topbar .container {
+        max-width: unset;
+    }
+
+    .topbar .separator {display: block;}
+
+
+
+
+
+
+
+
+
+    .nav-open-btn,
+    .navbar > *:not(.navbar-list),
+    .header .overlay {display: none;}
+
+
+    .header .container {max-width: unset;}
 }
