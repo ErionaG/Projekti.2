@@ -1,6 +1,6 @@
 :root{
     /*colors*/
-    --gold-crayola: hsl(38, 61%, 73%);
+    --gold-crayola: hsla(38, 61%, 73%);
     --quick-silver: hsla(0, 0%, 65%, 1); 
     --davys-grey: hsla(30, 3%, 34%, 1); 
     --smoky-black-1: hsla(40, 12%, 5%, 1); 
